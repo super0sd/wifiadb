@@ -1,6 +1,13 @@
 # WiFi ADB
 
+[![Release](https://img.shields.io/github/v/release/super0sd/wifiadb?label=release)](https://github.com/super0sd/wifiadb/releases/latest)
+[![Platform](https://img.shields.io/badge/Android-6.0%2B-3DDC84)](https://github.com/super0sd/wifiadb)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
+> **下载**：[WiFiADB-1.0.0-release.apk](https://github.com/super0sd/wifiadb/releases/download/v1.0.0/WiFiADB-1.0.0-release.apk)（4.0 MB，已签名）
+
 在 Android 手机上**开启无线调试（ADB over Wi-Fi）**，并用同一份 App **作为 ADB 客户端**连接局域网内的设备，附带命令行面板。
+
 
 界面参考绿色圆环开关：首页一个大圆环控制开关，独立设置页分「网络配置 / 端口设置 / 设备管理 / 连接偏好 / 权限说明 / 关于」六个区块。
 
