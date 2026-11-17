@@ -2,7 +2,7 @@
 
 [![Release](https://img.shields.io/github/v/release/super0sd/wifiadb?label=release)](https://github.com/super0sd/wifiadb/releases/latest)
 [![Platform](https://img.shields.io/badge/Android-6.0%2B-3DDC84)](https://github.com/super0sd/wifiadb)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 > **下载**：[WiFiADB-1.0.0-release.apk](https://github.com/super0sd/wifiadb/releases/download/v1.0.0/WiFiADB-1.0.0-release.apk)（4.0 MB，已签名）
 

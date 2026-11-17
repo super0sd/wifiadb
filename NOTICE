@@ -1,0 +1,9 @@
+WiFi ADB
+Copyright 2026 super0sd
+
+This product includes software developed by the Android Open Source Project
+(https://source.android.com/), licensed under the Apache License, Version 2.0.
+
+Third-party components:
+- AndroidX AppCompat / Core / RecyclerView — Apache License 2.0
+- Material Components for Android — Apache License 2.0
