@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi ADB</string>
+    <string name="settings">设置</string>
+    <string name="ip_address">IP地址</string>
+    <string name="copy">复制</string>
+    <string name="copied">已复制</string>
+    <string name="connection_method">连接方法</string>
+    <string name="more">更多</string>
+    <string name="boot_auto_start">开机自启</string>
+    <string name="cmd_manual">ADB命令手册</string>
+    <string name="adb_keyboard">ADB键盘使用</string>
+    <string name="view">去查看</string>
+    <string name="command_line">命令行</string>
+    <string name="usb_connected_tip">USB连接后点击命令行</string>
+    <string name="step_1">1.设备与PC连接至同一局域网下</string>
+    <string name="step_2">2.打开PC控制台，执行以下命令</string>
+    <string name="step_3">3.用USB连接另一台设备</string>
+    <string name="power_off">关闭</string>
+    <string name="power_on">启动</string>
+    <string name="state_running">无线调试运行中</string>
+    <string name="state_stopped">无线调试已关闭</string>
+    <string name="state_starting">正在启动…</string>
+    <string name="state_stopping">正在关闭…</string>
+    <string name="state_need_root">需要授权</string>
+    <string name="state_error">启动失败</string>
+</resources>

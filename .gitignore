@@ -1,0 +1,17 @@
+# Gradle / AGP
+.gradle/
+build/
+app/build/
+captures/
+.cxx/
+
+# 本机配置
+local.properties
+*.iml
+.idea/
+.DS_Store
+
+# 日志与临时产物
+*.log
+*.hprof
+*.apk.idsig

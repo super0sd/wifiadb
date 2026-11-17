@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+}
+
+// 发布签名：keystore/wifiadb.jks（口令随仓库提供，仅供本项目发布使用）
+def keystoreFile = rootProject.file('keystore/wifiadb.jks')
+def hasReleaseKey = keystoreFile.exists()
+
+android {
+    namespace 'com.yg.wifiadb'
+    compileSdk 35
+    buildToolsVersion '36.0.0'
+
+    defaultConfig {
+        applicationId "com.yg.wifiadb"
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName "1.0.0"
+        resourceConfigurations += ['zh', 'en']
+    }
+
+    signingConfigs {
+        if (hasReleaseKey) {
+            release {
+                storeFile keystoreFile
+                storePassword 'wifiadb2024'
+                keyAlias 'wifiadb'
+                keyPassword 'wifiadb2024'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            // 发布包跳过 lint 阻断（离线构建环境无 lint 工件）
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (hasReleaseKey) signingConfig signingConfigs.release
+        }
+        debug {
+            applicationIdSuffix ''
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packagingOptions {
+        resources.excludes += ['META-INF/*.kotlin_module']
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.core:core:1.9.0'
+}
